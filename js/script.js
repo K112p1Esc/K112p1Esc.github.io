@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Saudação
     if (lowerMessage.includes('oi') || lowerMessage.includes('olá') || lowerMessage.includes('ola') || lowerMessage.includes('hello') || lowerMessage.includes('eae')) {
-      return "Olá, fã da Furioso! 👋 Como posso te ajudar hoje?";
+      return "Olá, Furioso! 👋 Como posso te ajudar hoje?";
     }
 
     // Agradecimento
