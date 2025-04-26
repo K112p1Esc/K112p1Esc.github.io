@@ -65,4 +65,4 @@ PanteraBot/
 ## 📝 Licença
 MIT License - Veja o arquivo `LICENSE`
 ## ­
-<p align="center"> Feito por K112p1<br> #VAMOFURIA 🐆 </p> 
+<p align="center"> *Feito por K112p1*<br> *#VAMOFURIA 🐆* </p> 
