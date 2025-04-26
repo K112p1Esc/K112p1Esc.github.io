@@ -1,0 +1,1266 @@
+/* Define variáveis CSS globais para cores e temas */
+:root {
+  --primary-color: #a960ff;
+  /* Cor roxa principal do tema */
+  --primary-dark: #7a2cc4;
+  /* Tom mais escuro do roxo principal */
+  --secondary-color: #ff4655;
+  /* Cor secundária vermelha/rosa */
+  --dark-bg: #0f0f0f;
+  /* Cor de fundo escura principal */
+  --darker-bg: #080808;
+  /* Tom mais escuro para fundos */
+  --light-bg: #1a1a1a;
+  /* Cor de fundo clara para cards */
+  --lighter-bg: #2a2a2a;
+  /* Tom mais claro para elementos */
+  --text-color: #f1f1f1;
+  /* Cor principal do texto */
+  --text-muted: #aaaaaa;
+  /* Cor de texto secundário/atenuado */
+}
+
+/* Reset básico para todos os elementos HTML */
+* {
+  margin: 0;
+  /* Remove margens padrão */
+  padding: 0;
+  /* Remove paddings padrão */
+  box-sizing: border-box;
+  /* Considera borda no cálculo de dimensões */
+}
+
+/* Estilos gerais do corpo do documento */
+body {
+  font-family: 'Poppins', sans-serif;
+  /* Define a fonte principal */
+  background-color: var(--dark-bg);
+  /* Aplica a cor de fundo */
+  color: var(--text-color);
+  /* Define a cor do texto */
+  line-height: 1.6;
+  /* Altura da linha para melhor legibilidade */
+  overflow-x: hidden;
+  /* Previne rolagem horizontal */
+}
+
+/* Classe para destacar elementos com a cor primária */
+.highlight {
+  color: var(--primary-color);
+  /* Aplica a cor roxa principal */
+}
+
+/* ========== ESTILOS DE TIPOGRAFIA ========== */
+/* Estilos para cabeçalhos */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  /* Peso da fonte em negrito */
+  line-height: 1.2;
+  /* Altura de linha menor para títulos */
+}
+
+/* Estilos para parágrafos */
+p {
+  margin-bottom: 1rem;
+  /* Margem inferior padrão */
+}
+
+/* Estilos para links */
+a {
+  text-decoration: none;
+  /* Remove sublinhado padrão */
+  color: inherit;
+  /* Herda a cor do elemento pai */
+}
+
+/* ========== ESTILOS DE BOTÕES ========== */
+/* Estilos base para botões */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  /* Permite definir largura/altura */
+  padding: 0.8rem 1.8rem;
+  /* Espaçamento interno */
+  border-radius: 50px;
+  /* Bordas completamente arredondadas */
+  font-weight: 600;
+  /* Peso da fonte */
+  transition: all 0.3s ease;
+  /* Transição suave para efeitos hover */
+  text-align: center;
+  /* Centraliza o texto */
+}
+
+/* Estilos específicos para botão primário */
+.btn-primary {
+  background-color: var(--primary-color);
+  /* Fundo roxo */
+  color: white;
+  /* Texto branco */
+}
+
+/* Efeitos hover para botão primário */
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  /* Tom mais escuro de roxo */
+  transform: translateY(-2px);
+  /* Efeito de levantar */
+  box-shadow: 0 5px 15px rgba(169, 96, 255, 0.3);
+  /* Sombra roxa */
+}
+
+/* Estilos específicos para botão secundário */
+.btn-secondary {
+  background-color: transparent;
+  /* Fundo transparente */
+  color: var(--text-color);
+  /* Cor do texto padrão */
+  border: 2px solid var(--primary-color);
+  /* Borda roxa */
+}
+
+/* Efeitos hover para botão secundário */
+.btn-secondary:hover {
+  background-color: rgba(169, 96, 255, 0.1);
+  /* Fundo levemente roxo */
+  transform: translateY(-2px);
+  /* Efeito de levantar */
+}
+
+/* ========== HEADER E BARRA DE NAVEGAÇÃO ========== */
+/* Container principal do cabeçalho */
+.hero {
+  position: relative;
+  /* Permite posicionamento absoluto dos filhos */
+  height: 100vh;
+  /* Altura igual à viewport */
+  min-height: 600px;
+  /* Altura mínima */
+  display: flex;
+  /* Ativa flexbox */
+  flex-direction: column;
+  /* Organiza itens em coluna */
+  overflow: hidden;
+  /* Esconde conteúdo que ultrapassa */
+}
+
+/* Barra de navegação */
+.navbar {
+  display: flex;
+  /* Ativa flexbox */
+  justify-content: space-between;
+  /* Espaço entre os itens */
+  align-items: center;
+  /* Centraliza verticalmente */
+  padding: 1.5rem 3rem;
+  /* Espaçamento interno */
+  z-index: 100;
+  /* Garante que fique acima de outros elementos */
+  position: relative;
+  /* Contexto de empilhamento */
+}
+
+/* Estilo da logo */
+.logo img {
+  height: 40px;
+  /* Altura fixa para a logo */
+}
+
+/* Lista de links de navegação */
+.nav-links {
+  display: flex;
+  /* Organiza links em linha */
+  list-style: none;
+  /* Remove marcadores de lista */
+}
+
+/* Itens da lista de navegação */
+.nav-links li {
+  margin-left: 2rem;
+  /* Espaçamento entre itens */
+}
+
+/* Links de navegação */
+.nav-links a {
+  font-weight: 600;
+  /* Texto em negrito */
+  position: relative;
+  /* Para posicionar o pseudo-elemento */
+  padding-bottom: 5px;
+  /* Espaço para a borda animada */
+}
+
+/* Efeito de borda animada nos links */
+.nav-links a::after {
+  content: '';
+  /* Pseudo-elemento necessário */
+  position: absolute;
+  /* Posicionamento absoluto */
+  bottom: 0;
+  /* Alinha na base */
+  left: 0;
+  /* Alinha à esquerda */
+  width: 0;
+  /* Começa com largura zero */
+  height: 2px;
+  /* Altura da borda */
+  background-color: var(--primary-color);
+  /* Cor roxa */
+  transition: width 0.3s ease;
+  /* Animação suave */
+}
+
+/* Efeito hover - expande a borda */
+.nav-links a:hover::after {
+  width: 100%;
+  /* Borda ocupa toda a largura */
+}
+
+/* Ícone do menu hamburguer (mobile) */
+.hamburger {
+  display: none;
+  /* Oculta por padrão (só aparece em mobile) */
+  font-size: 1.5rem;
+  /* Tamanho do ícone */
+  cursor: pointer;
+  /* Cursor de ponteiro */
+}
+
+/* Conteúdo principal do hero */
+.hero-content {
+  z-index: 10;
+  /* Fica acima do vídeo de fundo */
+  padding: 0 3rem;
+  /* Espaçamento lateral */
+  margin-top: auto;
+  /* Empurra para baixo no container flex */
+  margin-bottom: 10rem;
+  /* Espaço na parte inferior */
+  max-width: 800px;
+  /* Largura máxima do conteúdo */
+}
+
+/* Título principal */
+.hero-content h1 {
+  font-size: 4.5rem;
+  /* Tamanho grande */
+  margin-bottom: 1rem;
+  /* Espaço abaixo */
+  line-height: 1.1;
+  /* Altura de linha reduzida */
+}
+
+/* Subtítulo */
+.hero-content .subtitle {
+  font-size: 1.5rem;
+  /* Tamanho médio */
+  margin-bottom: 2rem;
+  /* Espaço abaixo */
+  color: var(--text-muted);
+  /* Cor de texto secundário */
+}
+
+/* Container dos botões */
+.hero-buttons {
+  display: flex;
+  /* Organiza botões em linha */
+  gap: 1rem;
+  /* Espaço entre botões */
+}
+
+/* Container do vídeo de fundo */
+.hero-video {
+  position: absolute;
+  /* Posicionamento absoluto */
+  top: 0;
+  /* Alinha no topo */
+  left: 0;
+  /* Alinha à esquerda */
+  width: 100%;
+  /* Largura total */
+  height: 100%;
+  /* Altura total */
+  z-index: 1;
+  /* Fica atrás do conteúdo */
+}
+
+/* Container responsivo para o vídeo */
+.video-container {
+  position: relative;
+  /* Contexto para o iframe */
+  padding-bottom: 56.25%;
+  /* Proporção 16:9 (para vídeos) */
+  height: 0;
+  /* Altura controlada pelo padding */
+  overflow: hidden;
+  /* Esconde transbordamento */
+  width: 100%;
+  /* Largura total */
+}
+
+/* Estilo do iframe do vídeo */
+.video-container iframe {
+  position: absolute;
+  /* Posicionamento absoluto */
+  top: 0;
+  /* Alinha no topo */
+  left: 0;
+  /* Alinha à esquerda */
+  width: 100%;
+  /* Largura total */
+  height: 100%;
+  /* Altura total */
+  object-fit: cover;
+  /* Cobre todo o espaço mantendo proporção */
+}
+
+/* Overlay escuro sobre o vídeo */
+.overlay {
+  position: absolute;
+  /* Posicionamento absoluto */
+  top: 0;
+  /* Alinha no topo */
+  left: 0;
+  /* Alinha à esquerda */
+  width: 100%;
+  /* Largura total */
+  height: 100%;
+  /* Altura total */
+  /* Gradiente escuro para melhorar legibilidade do texto */
+  background: linear-gradient(to top, rgba(15, 15, 15, 0.9) 0%, rgba(15, 15, 15, 0.3) 100%);
+}
+
+/* ========== ESTILOS DAS SEÇÕES ========== */
+/* Estilos base para todas as seções */
+section {
+  padding: 5rem 3rem;
+  /* Espaçamento interno generoso */
+}
+
+/* Cabeçalho das seções */
+.section-header {
+  text-align: center;
+  /* Centraliza o conteúdo */
+  margin-bottom: 3rem;
+  /* Espaço abaixo */
+}
+
+/* Título das seções */
+.section-header h2 {
+  font-size: 2.5rem;
+  /* Tamanho grande */
+  margin-bottom: 0.5rem;
+  /* Espaço abaixo */
+}
+
+/* Texto descritivo das seções */
+.section-header p {
+  color: var(--text-muted);
+  /* Cor de texto secundário */
+  font-size: 1.1rem;
+  /* Tamanho ligeiramente aumentado */
+}
+
+/* ========== SEÇÃO DE CONQUISTAS ========== */
+/* Grid de conquistas */
+.achievements-grid {
+  display: grid;
+  /* Ativa grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* Colunas responsivas */
+  gap: 2rem;
+  /* Espaço entre itens */
+  max-width: 1200px;
+  /* Largura máxima */
+  margin: 0 auto;
+  /* Centraliza na página */
+}
+
+/* Cartão de conquista */
+.achievement-card {
+  padding: 1.5rem;
+  /* Espaçamento interno */
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  transition: all 0.3s ease;
+  /* Transição suave para hover */
+}
+
+/* Efeito hover nos cartões */
+.achievement-card:hover {
+  transform: translateY(-5px);
+  /* Efeito de levantar */
+}
+
+/* Estilo específico para campeonatos */
+.champion {
+  background-color: rgba(169, 96, 255, 0.1);
+  /* Fundo roxo claro */
+  border: 1px solid var(--primary-color);
+  /* Borda roxa */
+}
+
+/* Estilo específico para vice-campeonatos */
+.finalist {
+  background-color: rgba(255, 70, 85, 0.1);
+  /* Fundo vermelho claro */
+  border: 1px solid var(--secondary-color);
+  /* Borda vermelha */
+}
+
+/* Estilo específico para semifinalistas */
+.semifinalist {
+  background-color: rgba(255, 255, 255, 0.05);
+  /* Fundo branco muito claro */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Borda branca sutil */
+}
+
+/* Cabeçalho do cartão de conquista */
+.achievement-header {
+  display: flex;
+  /* Organiza ícone e texto em linha */
+  align-items: center;
+  /* Centraliza verticalmente */
+  gap: 1rem;
+  /* Espaço entre ícone e texto */
+  margin-bottom: 1rem;
+  /* Espaço abaixo */
+}
+
+/* Ícone no cabeçalho */
+.achievement-header i {
+  font-size: 1.5rem;
+  /* Tamanho aumentado */
+}
+
+/* Cor do ícone para campeões */
+.champion .achievement-header i {
+  color: gold;
+  /* Cor dourada */
+}
+
+/* Cor do ícone para vice-campeões */
+.finalist .achievement-header i {
+  color: silver;
+  /* Cor prateada */
+}
+
+/* Cor do ícone para semifinalistas */
+.semifinalist .achievement-header i {
+  color: #cd7f32;
+  /* Cor bronze */
+}
+
+/* Texto de premiação */
+.prize {
+  font-weight: 700;
+  /* Texto em negrito */
+  color: var(--primary-color);
+  /* Cor roxa */
+}
+
+/* ========== SEÇÃO DE JOGADORES ========== */
+/* Container dos cartões */
+.card-container {
+  display: grid;
+  /* Ativa grid layout */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  /* Colunas responsivas */
+  gap: 2rem;
+  /* Espaço entre cartões */
+  max-width: 1200px;
+  /* Largura máxima */
+  margin: 0 auto;
+  /* Centraliza na página */
+}
+
+/* Cartão de jogador */
+.jogador-card,
+.staff-card {
+  background-color: var(--light-bg);
+  /* Cor de fundo */
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  overflow: hidden;
+  /* Esconde conteúdo que ultrapassa */
+  transition: all 0.3s ease;
+  /* Transição suave para hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* Sombra sutil */
+}
+
+/* Efeito hover nos cartões */
+.jogador-card:hover,
+.staff-card:hover {
+  transform: translateY(-10px);
+  /* Efeito de levantar mais pronunciado */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  /* Sombra mais destacada */
+}
+
+/* Container da imagem do jogador */
+.player-image,
+.staff-image {
+  position: relative;
+  /* Contexto para posicionamento absoluto */
+  height: 300px;
+  /* Altura fixa */
+  overflow: hidden;
+  /* Esconde partes da imagem que ultrapassam */
+}
+
+/* Imagem do jogador */
+.player-image img,
+.staff-image img {
+  width: 100%;
+  /* Largura total */
+  height: 100%;
+  /* Altura total */
+  object-fit: cover;
+  /* Cobre todo o espaço mantendo proporção */
+  display: block;
+  /* Remove espaço abaixo da imagem */
+}
+
+/* Badge de função do jogador */
+.player-role {
+  position: absolute;
+  /* Posicionamento absoluto */
+  bottom: 10px;
+  /* 10px da base */
+  left: 10px;
+  /* 10px da esquerda */
+  background-color: var(--primary-color);
+  /* Fundo roxo */
+  color: white;
+  /* Texto branco */
+  padding: 0.3rem 0.8rem;
+  /* Espaçamento interno */
+  border-radius: 50px;
+  /* Bordas completamente arredondadas */
+  font-size: 0.8rem;
+  /* Tamanho pequeno */
+  font-weight: 600;
+  /* Texto em negrito */
+}
+
+/* Container de informações do jogador */
+.player-info,
+.staff-info {
+  padding: 1.5rem;
+  /* Espaçamento interno */
+}
+
+/* Nome do jogador */
+.player-info h3,
+.staff-info h3 {
+  font-size: 1.5rem;
+  /* Tamanho aumentado */
+  margin-bottom: 0.2rem;
+  /* Espaço abaixo reduzido */
+}
+
+/* Texto secundário (nome real, país) */
+.player-info p,
+.staff-info p {
+  color: var(--text-muted);
+  /* Cor de texto secundário */
+  margin-bottom: 0.5rem;
+  /* Espaço abaixo */
+}
+
+/* Detalhes do jogador (país, tempo na equipe) */
+.player-details {
+  margin: 1rem 0;
+  /* Espaço vertical */
+}
+
+/* Ícones nos detalhes */
+.player-details i {
+  margin-right: 0.5rem;
+  /* Espaço à direita do ícone */
+  width: 20px;
+  /* Largura fixa */
+  text-align: center;
+  /* Centraliza o ícone */
+}
+
+/* Links para redes sociais */
+.social-links {
+  display: flex;
+  /* Organiza ícones em linha */
+  gap: 0.8rem;
+  /* Espaço entre ícones */
+}
+
+/* Estilo dos links de redes sociais */
+.social-links a {
+  width: 35px;
+  /* Largura fixa */
+  height: 35px;
+  /* Altura fixa */
+  border-radius: 50%;
+  /* Formato circular */
+  background-color: var(--lighter-bg);
+  /* Cor de fundo */
+  display: flex;
+  /* Ativa flexbox para centralização */
+  align-items: center;
+  /* Centraliza verticalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  transition: all 0.3s ease;
+  /* Transição suave para hover */
+}
+
+/* Efeito hover nos links sociais */
+.social-links a:hover {
+  background-color: var(--primary-color);
+  /* Fundo roxo */
+  color: white;
+  /* Texto branco */
+  transform: translateY(-3px);
+  /* Efeito de levantar */
+}
+
+/* ========== SEÇÃO DE HISTÓRIA ========== */
+/* Container do conteúdo histórico */
+.history-content {
+  display: flex;
+  /* Ativa flexbox */
+  align-items: center;
+  /* Centraliza verticalmente */
+  gap: 3rem;
+  /* Espaço entre texto e imagem */
+  max-width: 1200px;
+  /* Largura máxima */
+  margin: 0 auto;
+  /* Centraliza na página */
+}
+
+/* Container do texto histórico */
+.history-text {
+  flex: 1;
+  /* Ocupa espaço disponível */
+}
+
+/* Parágrafos do texto histórico */
+.history-text p {
+  margin-bottom: 1.5rem;
+  /* Espaço entre parágrafos */
+  font-size: 1.1rem;
+  /* Tamanho ligeiramente aumentado */
+}
+
+/* Container da imagem histórica */
+.history-image {
+  flex: 1;
+  /* Ocupa espaço disponível */
+  height: auto;
+  /* Altura automática */
+}
+
+/* Estilo da imagem histórica */
+.history-image img {
+  width: 100%;
+  /* Largura total */
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  /* Sombra destacada */
+}
+
+/* ========== RODAPÉ ========== */
+/* Estilos base do rodapé */
+.footer {
+  background-color: var(--darker-bg);
+  /* Cor de fundo mais escura */
+  padding: 4rem 3rem 2rem;
+  /* Espaçamento interno */
+}
+
+/* Container do conteúdo do rodapé */
+.footer-content {
+  display: grid;
+  /* Ativa grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* Colunas responsivas */
+  gap: 2rem;
+  /* Espaço entre colunas */
+  max-width: 1200px;
+  /* Largura máxima */
+  margin: 0 auto;
+  /* Centraliza na página */
+}
+
+/* Estilo da logo no rodapé */
+.footer-logo img {
+  height: 40px;
+  /* Altura fixa */
+  margin-bottom: 1rem;
+  /* Espaço abaixo */
+}
+
+/* Títulos das seções do rodapé */
+.footer-links h3,
+.footer-social h3 {
+  font-size: 1.2rem;
+  /* Tamanho médio */
+  margin-bottom: 1.5rem;
+  /* Espaço abaixo */
+  color: var(--primary-color);
+  /* Cor roxa */
+}
+
+/* Lista de links do rodapé */
+.footer-links ul {
+  list-style: none;
+  /* Remove marcadores */
+}
+
+/* Itens da lista de links */
+.footer-links li {
+  margin-bottom: 0.8rem;
+  /* Espaço entre itens */
+}
+
+/* Efeito hover nos links */
+.footer-links a:hover {
+  color: var(--primary-color);
+  /* Cor roxa ao passar o mouse */
+}
+
+/* Container dos ícones sociais */
+.social-icons {
+  display: flex;
+  /* Organiza ícones em linha */
+  gap: 1rem;
+  /* Espaço entre ícones */
+}
+
+/* Estilo dos links sociais */
+.social-icons a {
+  width: 40px;
+  /* Largura fixa */
+  height: 40px;
+  /* Altura fixa */
+  border-radius: 50%;
+  /* Formato circular */
+  background-color: var(--light-bg);
+  /* Cor de fundo */
+  display: flex;
+  /* Ativa flexbox para centralização */
+  align-items: center;
+  /* Centraliza verticalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  transition: all 0.3s ease;
+  /* Transição suave para hover */
+}
+
+/* Efeito hover nos ícones sociais */
+.social-icons a:hover {
+  background-color: var(--primary-color);
+  /* Fundo roxo */
+  transform: translateY(-3px);
+  /* Efeito de levantar */
+}
+
+/* Parte inferior do rodapé */
+.footer-bottom {
+  text-align: center;
+  /* Centraliza o texto */
+  margin-top: 3rem;
+  /* Espaço acima */
+  padding-top: 2rem;
+  /* Espaço interno acima */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* Linha divisória sutil */
+  color: var(--text-muted);
+  /* Cor de texto secundário */
+  font-size: 0.9rem;
+  /* Tamanho pequeno */
+}
+
+/* ========== CHATBOT ========== */
+/* Container principal do chatbot */
+.chatbot-container {
+  position: fixed;
+  /* Posição fixa na tela */
+  bottom: 100px;
+  /* 100px da base */
+  right: 30px;
+  /* 30px da direita */
+  width: 350px;
+  /* Largura fixa */
+  height: 500px;
+  /* Altura fixa */
+  background-color: var(--light-bg);
+  /* Cor de fundo */
+  border-radius: 15px;
+  /* Bordas arredondadas */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  /* Sombra destacada */
+  display: flex;
+  /* Ativa flexbox */
+  flex-direction: column;
+  /* Organiza itens em coluna */
+  overflow: hidden;
+  /* Esconde conteúdo que ultrapassa */
+  z-index: 999;
+  /* Garante que fique acima de outros elementos */
+  transform: translateY(20px);
+  /* Posição inicial (para animação) */
+  opacity: 0;
+  /* Inicialmente invisível */
+  visibility: hidden;
+  /* Inicialmente oculto */
+  transition: all 0.3s ease;
+  /* Transição suave */
+}
+
+/* Estado ativo do chatbot (quando visível) */
+.chatbot-container.active {
+  transform: translateY(0);
+  /* Volta à posição normal */
+  opacity: 1;
+  /* Torna visível */
+  visibility: visible;
+  /* Torna visível */
+}
+
+/* Cabeçalho do chatbot */
+.chatbot-header {
+  padding: 1rem;
+  /* Espaçamento interno */
+  background-color: var(--primary-color);
+  /* Fundo roxo */
+  color: white;
+  /* Texto branco */
+  display: flex;
+  /* Ativa flexbox */
+  justify-content: space-between;
+  /* Espaço entre os itens */
+  align-items: center;
+  /* Centraliza verticalmente */
+}
+
+/* Título do chatbot */
+.chatbot-header h3 {
+  font-size: 1.2rem;
+  /* Tamanho médio */
+}
+
+/* Container dos botões de ação */
+.chatbot-actions {
+  display: flex;
+  /* Organiza botões em linha */
+  gap: 0.5rem;
+  /* Espaço entre botões */
+}
+
+/* Estilo dos botões de ação */
+.chatbot-actions button {
+  background: none;
+  /* Remove fundo */
+  border: none;
+  /* Remove borda */
+  color: white;
+  /* Cor branca */
+  cursor: pointer;
+  /* Cursor de ponteiro */
+  font-size: 1rem;
+  /* Tamanho padrão */
+  transition: all 0.2s ease;
+  /* Transição suave */
+}
+
+/* Efeito hover nos botões */
+.chatbot-actions button:hover {
+  transform: scale(1.1);
+  /* Efeito de aumentar */
+}
+
+/* Área de mensagens do chatbot */
+.chatbot-logs {
+  flex: 1;
+  /* Ocupa espaço disponível */
+  padding: 1rem;
+  /* Espaçamento interno */
+  overflow-y: auto;
+  /* Rolagem vertical se necessário */
+  display: flex;
+  /* Ativa flexbox */
+  flex-direction: column;
+  /* Organiza mensagens em coluna */
+  gap: 1rem;
+  /* Espaço entre mensagens */
+}
+
+/* Estilo base para mensagens (bot e usuário) */
+.bot-message,
+.user-message {
+  max-width: 80%;
+  /* Largura máxima */
+  padding: 0.8rem 1rem;
+  /* Espaçamento interno */
+  border-radius: 15px;
+  /* Bordas arredondadas */
+  position: relative;
+  /* Para animações */
+  animation: fadeIn 0.3s ease;
+  /* Animação de aparecimento */
+}
+
+/* Mensagem do bot */
+.bot-message {
+  align-self: flex-start;
+  /* Alinha à esquerda */
+  background-color: var(--lighter-bg);
+  /* Cor de fundo */
+  border-bottom-left-radius: 5px;
+  /* Borda inferior esquerda menos arredondada */
+}
+
+/* Mensagem do usuário */
+.user-message {
+  align-self: flex-end;
+  /* Alinha à direita */
+  background-color: var(--primary-color);
+  /* Fundo roxo */
+  color: white;
+  /* Texto branco */
+  border-bottom-right-radius: 5px;
+  /* Borda inferior direita menos arredondada */
+}
+
+/* Container de perguntas rápidas */
+.quick-questions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  padding: 0; 
+  list-style: none;
+}
+
+.quick-question {
+  background-color: rgba(169, 96, 255, 0.15); /* Fundo roxo claro */
+  border: 1px solid rgba(169, 96, 255, 0.3); /* Borda roxa sutil */
+  color: #ffffff;
+  padding: 0.4rem 0.8rem; /* Padding ligeiramente aumentado */
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500; /* Texto um pouco mais forte */
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); /* Transição mais suave */
+  flex: 1 0 calc(33.333% - 0.5rem);
+  min-width: 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.quick-question:hover {
+  background-color: rgba(169, 96, 255, 0.25);
+  border-color: rgba(169, 96, 255, 0.5);
+  transform: translateY(-1px); /* Efeito de levitação sutil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra mais pronunciada no hover */
+}
+
+.quick-question:active {
+  transform: translateY(0); /* Efeito de pressionado */
+  transition-duration: 0.1s;
+}
+
+/* Área de input do usuário */
+.chatbot-input {
+  display: flex;
+  /* Organiza input e botão em linha */
+  padding: 1rem;
+  /* Espaçamento interno */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  /* Linha divisória sutil */
+}
+
+/* Campo de input */
+.chatbot-input input {
+  flex: 1;
+  /* Ocupa espaço disponível */
+  padding: 0.8rem 1rem;
+  /* Espaçamento interno */
+  border: none;
+  /* Remove borda */
+  border-radius: 50px;
+  /* Bordas completamente arredondadas */
+  background-color: var(--lighter-bg);
+  /* Cor de fundo */
+  color: var(--text-color);
+  /* Cor do texto */
+  outline: none;
+  /* Remove contorno ao focar */
+}
+
+/* Botão de enviar */
+.chatbot-input button {
+  width: 40px;
+  /* Largura fixa */
+  height: 40px;
+  /* Altura fixa */
+  border-radius: 50%;
+  /* Formato circular */
+  background-color: var(--primary-color);
+  /* Fundo roxo */
+  color: white;
+  /* Texto branco */
+  border: none;
+  /* Remove borda */
+  margin-left: 0.5rem;
+  /* Espaço à esquerda */
+  cursor: pointer;
+  /* Cursor de ponteiro */
+  transition: all 0.2s ease;
+  /* Transição suave */
+}
+
+/* Efeito hover no botão de enviar */
+.chatbot-input button:hover {
+  background-color: var(--primary-dark);
+  /* Tom mais escuro de roxo */
+}
+
+/* Botão para abrir/fechar o chatbot */
+.chatbot-toggle {
+  position: fixed;
+  /* Posição fixa na tela */
+  bottom: 30px;
+  /* 30px da base */
+  right: 30px;
+  /* 30px da direita */
+  width: 60px;
+  /* Largura fixa */
+  height: 60px;
+  /* Altura fixa */
+  border-radius: 50%;
+  /* Formato circular */
+  background-color: var(--primary-color);
+  /* Fundo roxo */
+  color: white;
+  /* Texto branco */
+  border: none;
+  /* Remove borda */
+  font-size: 1.5rem;
+  /* Tamanho grande */
+  cursor: pointer;
+  /* Cursor de ponteiro */
+  display: flex;
+  /* Ativa flexbox para centralização */
+  align-items: center;
+  /* Centraliza verticalmente */
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  box-shadow: 0 5px 20px rgba(169, 96, 255, 0.3);
+  /* Sombra roxa */
+  z-index: 999;
+  /* Garante que fique acima de outros elementos */
+  transition: all 0.3s ease;
+  /* Transição suave */
+}
+
+/* Efeito hover no botão do chatbot */
+.chatbot-toggle:hover {
+  background-color: var(--primary-dark);
+  /* Tom mais escuro de roxo */
+  transform: scale(1.1);
+  /* Efeito de aumentar */
+}
+
+/* Estilo para o indicador de digitando */
+.typing-indicator {
+  background-color: var(--lighter-bg) !important;
+}
+
+.typing-dots {
+  display: inline-flex;
+  align-items: center;
+  height: 17px;
+}
+
+.typing-dots span {
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.4;
+}
+
+.typing-dots span:nth-child(1) {
+  animation: typingAnimation 1s infinite;
+}
+
+.typing-dots span:nth-child(2) {
+  animation: typingAnimation 1s infinite 0.2s;
+}
+
+.typing-dots span:nth-child(3) {
+  animation: typingAnimation 1s infinite 0.4s;
+}
+
+/* ========== ANIMAÇÕES ========== */
+/* Animação de aparecimento suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* Inicia transparente */
+    transform: translateY(10px);
+    /* Inicia ligeiramente abaixo */
+  }
+
+  to {
+    opacity: 1;
+    /* Termina totalmente visível */
+    transform: translateY(0);
+    /* Termina na posição normal */
+  }
+}
+
+@keyframes typingAnimation {
+  0% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+  100% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+}
+
+/* ========== RESPONSIVIDADE ========== */
+/* Telas médias (até 992px) */
+@media (max-width: 992px) {
+
+  /* Reduz tamanho do título principal */
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  /* Muda direção do conteúdo histórico para coluna */
+  .history-content {
+    flex-direction: column;
+  }
+}
+
+/* Telas pequenas (até 768px) */
+@media (max-width: 768px) {
+
+  /* Reduz padding da navbar */
+  .navbar {
+    padding: 1.5rem;
+  }
+
+  /* Estilos para menu mobile */
+  .nav-links {
+    display: none;
+    /* Oculta por padrão */
+    position: absolute;
+    /* Posicionamento absoluto */
+    top: 80px;
+    /* 80px do topo */
+    left: 0;
+    /* Alinha à esquerda */
+    width: 100%;
+    /* Largura total */
+    background-color: var(--darker-bg);
+    /* Cor de fundo */
+    flex-direction: column;
+    /* Organiza itens em coluna */
+    padding: 1rem 0;
+    /* Espaçamento vertical */
+  }
+
+  /* Mostra menu quando ativo */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Ajusta itens do menu mobile */
+  .nav-links li {
+    padding: 0.5rem 1.5rem;
+    /* Espaçamento interno */
+  }
+
+  /* Mostra ícone do hamburguer */
+  .hamburger {
+    display: block;
+  }
+
+  /* Ajustes no conteúdo principal */
+  .hero-content {
+    padding: 0 1.5rem;
+    /* Reduz padding lateral */
+    margin-bottom: 5rem;
+    /* Reduz margem inferior */
+  }
+
+  /* Reduz tamanho do título */
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Muda direção dos botões para coluna */
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  /* Reduz padding das seções */
+  section {
+    padding: 3rem 1.5rem;
+  }
+
+  /* Ajustes no chatbot para mobile */
+  .chatbot-container {
+    width: 100%;
+    /* Largura total */
+    height: 70vh;
+    /* 70% da altura da tela */
+    bottom: 0;
+    /* Alinha na base */
+    right: 0;
+    /* Alinha à direita */
+    border-radius: 15px 15px 0 0;
+    /* Bordas arredondadas só no topo */
+  }
+
+  /* Ajusta posição do botão do chatbot */
+  .chatbot-toggle {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+
+  /* Muda grid de conquistas para 1 coluna */
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Muda grid de jogadores para 1 coluna */
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+

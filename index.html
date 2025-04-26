@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento HTML5 -->
+<html lang="pt-BR">
+<!-- Elemento raiz com definição de idioma (português do Brasil) -->
+
+<head>
+  <!-- Cabeçalho do documento - metadados e links para recursos externos -->
+  <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura viewport para responsividade -->
+  <meta name="description" content="Site oficial da FURIA Esports - Time de CS:GO em 2025">
+  <!-- Meta descrição para SEO -->
+  <title>FURIA CS - Raça, Amor e Sangue nos Olhos</title> <!-- Título da página exibido na aba do navegador -->
+
+  <!-- Links para folhas de estilo e fontes externas -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Ícones Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pré-conexão para Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Pré-conexão para Google Fonts -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/furia.png"> <!-- Favicon da FURIA -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Fonte Poppins -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Folha de estilo local -->
+</head>
+
+<body>
+  <!-- Corpo do documento - conteúdo visível da página -->
+
+  <!-- Cabeçalho hero (seção principal com vídeo de fundo) -->
+  <header class="hero">
+    <!-- Barra de navegação -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/furia.png" alt="FURIA Logo" loading="lazy"> <!-- Logo da FURIA com lazy loading -->
+      </div>
+      <!-- Links de navegação -->
+      <ul class="nav-links">
+        <li><a href="#conquistas">Conquistas</a></li> <!-- Link âncora para seção de Conquistas -->
+        <li><a href="#jogadores">Jogadores</a></li> <!-- Link âncora para seção de Jogadores -->
+        <li><a href="#historia">História</a></li> <!-- Link âncora para seção de História -->
+      </ul>
+      <!-- Ícone do menu hamburguer (visível apenas em mobile) -->
+      <div class="hamburger" aria-label="Menu mobile" aria-expanded="false">
+        <i class="fas fa-bars"></i> <!-- Ícone de menu -->
+      </div>
+    </nav>
+
+    <!-- Conteúdo principal do hero -->
+    <div class="hero-content">
+      <h1>Aqui é <span class="highlight">FURIA</span> 2025!</h1> <!-- Título principal com destaque -->
+      <p class="subtitle">Raça, Amor e Sangue nos Olhos</p> <!-- Subtítulo -->
+      <!-- Container dos botões de ação -->
+      <div class="hero-buttons">
+        <a href="#jogadores" class="btn-primary">Conheça o Time</a> <!-- Botão primário -->
+        <a href="https://furia.gg" target="_blank" rel="noopener noreferrer" class="btn-secondary">Visite a Loja</a>
+        <!-- Botão secundário com segurança -->
+      </div>
+    </div>
+
+    <!-- Vídeo de fundo do hero -->
+    <div class="hero-video">
+      <div class="video-container">
+        <!-- Incorporação do vídeo do YouTube com parâmetros especiais -->
+        <iframe
+          src="https://www.youtube.com/embed/0NluG5rZlWo?autoplay=1&mute=1&controls=0&loop=1&playlist=0NluG5rZlWo&modestbranding=1&rel=0"
+          frameborder="0" allowfullscreen aria-label="Vídeo de fundo FURIA"></iframe>
+      </div>
+      <!-- Overlay escuro para melhorar legibilidade do texto sobre o vídeo -->
+      <div class="overlay"></div>
+    </div>
+  </header>
+
+  <!-- Seção de Conquistas -->
+  <section id="conquistas" class="conquistas">
+    <!-- Cabeçalho da seção -->
+    <div class="section-header">
+      <h2>Nossas <span class="highlight">Conquistas</span></h2>
+      <p>O caminho da FURIA no cenário competitivo</p>
+    </div>
+
+    <!-- Grid de cartões de conquistas -->
+    <div class="achievements-grid">
+      <!-- Cartão de campeonato -->
+      <div class="achievement-card champion">
+        <div class="achievement-header">
+          <i class="fas fa-trophy"></i> <!-- Ícone de troféu -->
+          <h3>ESL Pro League S12 NA</h3> <!-- Título do torneio -->
+        </div>
+        <div class="achievement-details">
+          <p>1º Lugar | 2020</p> <!-- Posição e ano -->
+          <p>3x0 vs 100 Thieves</p> <!-- Resultado -->
+          <p class="prize">US$ 77,500</p> <!-- Premiação -->
+        </div>
+      </div>
+
+      <!-- Cartão de vice-campeonato -->
+      <div class="achievement-card finalist">
+        <div class="achievement-header">
+          <i class="fas fa-medal"></i> <!-- Ícone de medalha -->
+          <h3>ECS Season 7 Finals</h3>
+        </div>
+        <div class="achievement-details">
+          <p>2º Lugar | 2019</p>
+          <p>0x2 vs Team Vitality</p>
+          <p class="prize">US$ 100,000</p>
+        </div>
+      </div>
+
+      <!-- Cartão de semifinalista -->
+      <div class="achievement-card semifinalist">
+        <div class="achievement-header">
+          <i class="fas fa-star"></i> <!-- Ícone de estrela -->
+          <h3>IEM Rio Major 2022</h3>
+        </div>
+        <div class="achievement-details">
+          <p>3º-4º Lugar | 2022</p>
+          <p>1x2 vs HEROIC</p>
+          <p class="prize">US$ 80,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Jogadores -->
+  <section id="jogadores" class="jogadores">
+    <!-- Cabeçalho da seção -->
+    <div class="section-header">
+      <h2>Elenco <span class="highlight">Atual</span> (2025)</h2>
+      <p>Os guerreiros que representam a FURIA</p>
+    </div>
+
+    <!-- Container dos cartões de jogadores -->
+    <div class="card-container">
+      <!-- Cartão do jogador KSCERATO -->
+      <div class="jogador-card">
+        <div class="player-image">
+          <img src="img/600px-KSCERATO_at_PGL_Bucharest_2025.jpg" alt="KSCERATO" loading="lazy">
+          <!-- Foto do jogador com lazy loading -->
+          <div class="player-role">Rifler</div> <!-- Função do jogador -->
+        </div>
+        <div class="player-info">
+          <h3>KSCERATO</h3> <!-- Nickname -->
+          <p>Kaike Cerato</p> <!-- Nome real -->
+          <!-- Detalhes do jogador -->
+          <div class="player-details">
+            <p><i class="fas fa-flag"></i> Brasil</p> <!-- Nacionalidade -->
+            <p><i class="fas fa-calendar"></i> Na FURIA desde 2018</p> <!-- Tempo na equipe -->
+          </div>
+          <!-- Links para redes sociais -->
+          <div class="social-links">
+            <a href="https://x.com/FURIA_KSCERATO" target="_blank" rel="noopener noreferrer"
+              aria-label="Twitter do KSCERATO"><i class="fab fa-twitter"></i></a> <!-- Twitter -->
+            <a href="https://www.instagram.com/ksceratocs/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram do KSCERATO"><i class="fab fa-instagram"></i></a>
+            <!-- Instagram -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Cartão do jogador yuurih (mesma estrutura do anterior) -->
+      <div class="jogador-card">
+        <div class="player-image">
+          <img src="img/600px-Yuurih_at_PGL_Bucharest_2025.jpg" alt="yuurih" loading="lazy">
+          <div class="player-role">Entry Fragger</div>
+        </div>
+        <div class="player-info">
+          <h3>yuurih</h3>
+          <p>Yuri Santos</p>
+          <div class="player-details">
+            <p><i class="fas fa-flag"></i> Brasil</p>
+            <p><i class="fas fa-calendar"></i> Na FURIA desde 2018</p>
+          </div>
+          <div class="social-links">
+            <a href="https://x.com/FURIA_yaurih" target="_blank" rel="noopener noreferrer"
+              aria-label="Twitter do yuurih"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yuurihcs/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram do yuurih"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cartão do jogador FalleN -->
+      <div class="jogador-card">
+        <div class="player-image">
+          <img src="img/600px-FalleN_at_PGL_Bucharest_2025.jpg" alt="FalleN" loading="lazy">
+          <div class="player-role">AWPer / Capitão</div>
+        </div>
+        <div class="player-info">
+          <h3>FalleN</h3>
+          <p>Gabriel Toledo</p>
+          <div class="player-details">
+            <p><i class="fas fa-flag"></i> Brasil</p>
+            <p><i class="fas fa-calendar"></i> Na FURIA desde 2023</p>
+          </div>
+          <div class="social-links">
+            <a href="https://x.com/FalleNCS" target="_blank" rel="noopener noreferrer" aria-label="Twitter do FalleN"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/fallen/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram do FalleN"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cartão do jogador molodoy -->
+      <div class="jogador-card">
+        <div class="player-image">
+          <img src="img/GoRqLHpWkAAcp8R-860x507-1.jpeg" alt="molodoy" loading="lazy">
+          <div class="player-role">AWPer</div>
+        </div>
+        <div class="player-info">
+          <h3>molodoy</h3>
+          <p>Danil Golubenko</p>
+          <div class="player-details">
+            <p><i class="fas fa-flag"></i> Cazaquistão</p>
+            <p><i class="fas fa-calendar"></i> Na FURIA desde 2024</p>
+          </div>
+          <div class="social-links">
+            <a href="https://x.com/tvoy_molodoy" target="_blank" rel="noopener noreferrer"
+              aria-label="Twitter do molodoy"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/danil.molodoy_/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram do molodoy"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cartão do jogador Yekindar -->
+      <div class="jogador-card">
+        <div class="player-image">
+          <img src="img/600px-YEKINDAR_at_Copenhagen_Major_2024_AME_RMR.jpg" alt="skullz" loading="lazy">
+          <div class="player-role">Rifler</div>
+        </div>
+        <div class="player-info">
+          <h3>Yekindar</h3>
+          <p>Felipe Medeiros</p>
+          <div class="player-details">
+            <p><i class="fas fa-flag"></i> Brasil</p>
+            <p><i class="fas fa-calendar"></i> Na FURIA desde 2025</p>
+          </div>
+          <div class="social-links">
+            <a href="https://x.com/yek1ndar" target="_blank" rel="noopener noreferrer"
+              aria-label="Twitter do Yekindar"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/yek1ndar/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram do Yekindar"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cartão do técnico -->
+      <div class="staff-card">
+        <div class="staff-image">
+          <img src="img/600px-Sidde_at_PGL_Bucharest_2025.jpg" alt="sidde" loading="lazy">
+        </div>
+        <div class="staff-info">
+          <h3>sidde</h3>
+          <p>Sidnei Macedo</p>
+          <p><i class="fas fa-flag"></i> Brasil</p>
+          <p>Treinador Principal</p>
+          <div class="social-links">
+            <a href="https://x.com/siddecs" target="_blank" rel="noopener noreferrer" aria-label="Twitter do sidde"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/siddecs/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram do sidde"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de História -->
+  <section id="historia" class="historia">
+    <!-- Cabeçalho da seção -->
+    <div class="section-header">
+      <h2>Nossa <span class="highlight">História</span></h2>
+      <p>De underdogs a potência mundial</p>
+    </div>
+
+    <!-- Conteúdo da história (texto + imagem) -->
+    <div class="history-content">
+      <div class="history-text">
+        <!-- Parágrafos com a história da FURIA -->
+        <p>A FURIA foi fundada em 2017 com o objetivo de revolucionar o cenário de esports no Brasil. Seu primeiro
+          investimento foi no Counter-Strike: Global Offensive, onde faria sua primeira aparição em um Major no IEM
+          Katowice 2019.</p>
+        <p>Em setembro de 2020, a FURIA venceu a ESL Pro League Season 12 North America, derrotando a 100 Thieves por
+          3x0 na final e levando para casa US$77,500. Este foi um marco importante durante a pandemia de COVID-19.</p>
+        <p>Em 2021, a organização fechou o "Acordo do Louvre" com a ESL, tornando-se parceira permanente da ESL Pro
+          League. O acordo foi renovado até 2025, mostrando o crescimento contínuo da organização.</p>
+        <p>O ano de 2022 trouxe uma das maiores conquistas da FURIA - um 3º-4º lugar no IEM Rio Major, perdendo para a
+          HEROIC por 1x2, mas garantindo US$80,000 em premiação e o coração dos fãs brasileiros.</p>
+        <p>Em julho de 2023, a FURIA anunciou a contratação de Gabriel "FalleN" Toledo e Marcelo "chelo" Cespedes, ambos
+          vindos da Imperial, fortalecendo ainda mais seu elenco.</p>
+        <p>2024 marcou uma nova era para a FURIA, com a contratação do jogador cazaque Danil "molodoy" Golubenko e do
+          brasileiro Felipe "skullz" Medeiros, além da renovação dos contratos de KSCERATO e yuurih por mais três anos.
+          A equipe técnica também foi reforçada com analistas internacionais, mostrando a ambição global da organização.
+        </p>
+      </div>
+      <!-- Imagem ilustrativa -->
+      <div class="history-image">
+        <img
+          src="https://s2-ge.glbimg.com/jHeRtCW4DfGCn30UQUVi5KXmR4w=/0x0:2048x1365/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/9/3/xaLPKBQjymwe230scDBA/furia-legends-iem-major-rio-2022.jpg"
+          alt="FURIA no IEM Rio Major" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Logo e slogan -->
+      <div class="footer-logo">
+        <img src="img/furia.png" alt="FURIA Logo" loading="lazy">
+        <p>Raça, Amor e Sangue nos Olhos</p>
+      </div>
+
+      <!-- Links rápidos -->
+      <div class="footer-links">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#conquistas">Conquistas</a></li>
+          <li><a href="#jogadores">Jogadores</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="https://furia.gg" target="_blank" rel="noopener noreferrer">Loja</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociais -->
+      <div class="footer-social">
+        <h3>Redes Sociais</h3>
+        <div class="social-icons">
+          <a href="https://twitter.com/FURIA" target="_blank" rel="noopener noreferrer" aria-label="Twitter da FURIA"><i
+              class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/furiagg/" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram da FURIA"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.twitch.tv/furiagg" target="_blank" rel="noopener noreferrer"
+            aria-label="Twitch da FURIA"><i class="fab fa-twitch"></i></a>
+          <a href="https://www.youtube.com/@FURIAggCS" target="_blank" rel="noopener noreferrer"
+            aria-label="YouTube da FURIA"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé inferior (copyright) -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 FURIA Esports. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Chatbot -->
+  <div id="chatbot" class="chatbot-container">
+    <!-- Cabeçalho do chatbot -->
+    <div class="chatbot-header">
+      <h3>PanteraBot</h3> <!-- Título do chatbot -->
+      <div class="chatbot-actions">
+        <!-- Botões de ação do chatbot -->
+        <button id="minimizeChat" aria-label="Minimizar chat"><i class="fas fa-minus"></i></button> <!-- Minimizar -->
+        <button id="closeChat" aria-label="Fechar chat"><i class="fas fa-times"></i></button> <!-- Fechar -->
+      </div>
+    </div>
+
+    <!-- Área de logs/mensagens -->
+    <div id="chatlogs" class="chatbot-logs">
+      <div class="bot-message">
+        <div class="message-content">
+          <p>Olá, fã da FURIA! 👋 Sou o PanteraBot, aqui para te ajudar. Posso falar sobre:</p>
+          <!-- Perguntas rápidas -->
+          <ul class="quick-questions">
+            <li><button class="quick-question" data-question="Quem são os jogadores atuais?">Jogadores</button></li>
+            <li><button class="quick-question" data-question="Quais são as conquistas da FURIA?">Conquistas</button></li>
+            <li><button class="quick-question" data-question="Onde comprar produtos FURIA?">Loja</button></li>
+            <li><button class="quick-question" data-question="Qual a história da FURIA?">História</button></li>
+            <li><button class="quick-question" data-question="Quais são as redes sociais da FURIA?">Redes Sociais</button></li>
+            <li><button class="quick-question" data-question="Quando são os próximos jogos?">Próximos Jogos</button></li>
+            <li><button class="quick-question" data-question="Quem são os patrocinadores?">Patrocinadores</button></li>
+            <li><button class="quick-question" data-question="Como é a estrutura de treinos?">Treinos</button></li>
+            <li><button class="quick-question" data-question="A FURIA tem alguma base de CS?">Time Base</button></li>
+            <li><button class="quick-question" data-question="O que é CS2?">Sobre o CS2</button></li>
+          </ul>
+          <p>O que você gostaria de saber?</p>
+        </div>
+      </div>
+    </div>
+    <!-- Área de input do usuário -->
+    <div class="chatbot-input">
+      <input type="text" id="userInput" placeholder="Digite sua mensagem..." autocomplete="off"
+        aria-label="Digite sua mensagem"> <!-- Campo de texto -->
+      <button id="sendMessage" aria-label="Enviar mensagem"><i class="fas fa-paper-plane"></i></button>
+      <!-- Botão de enviar -->
+    </div>
+  </div>
+
+  <!-- Botão para abrir/fechar o chatbot -->
+  <button id="chatbotToggle" class="chatbot-toggle" aria-label="Abrir chat">
+    <i class="fas fa-comment-dots"></i> <!-- Ícone de balão de conversa -->
+  </button>
+
+  <!-- Script JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
