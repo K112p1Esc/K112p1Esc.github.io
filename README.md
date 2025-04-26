@@ -1,4 +1,4 @@
-# 🐆 PanteraBot - O Chatbot Oficial da FURIA Esports
+# PanteraBot - O Chatbot Oficial da FURIA Esports
 
 ![Banner FURIA](https://static-cdn.jtvnw.net/jtv_user_pictures/77929c41-b8da-4ddf-8f1f-35a8f6d73a59-profile_banner-480.jpeg)
 
@@ -42,10 +42,7 @@ PanteraBot/
 ├── js/
 │   ├── script.js       # Lógica principal
 │   └── animations.js   # Efeitos especiais
-├── assets/
-│   ├── img/            # Imagens e logos
-│   ├── videos/         # Clipes dos jogos
-│   └── sounds/         # Efeitos sonoros
+├── img/                # Imagens e logos
 ├── LICENSE             # Licença MIT
 └── README.md           # Você está aqui!
 ```
@@ -65,4 +62,4 @@ PanteraBot/
 ## 📝 Licença
 MIT License - Veja o arquivo `LICENSE`
 ## ­
-<p align="center"> <b>Feito por K112p1</b><br> <b>#VAMOFURIA 🐆</b> </p> 
+<p align="center"> <b>Feito por K112p1</b><br> <b>#VAMOFURIA</b> </p> 
