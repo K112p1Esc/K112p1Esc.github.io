@@ -271,66 +271,47 @@ a {
   /* Espaço entre botões */
 }
 
-/* Container do vídeo de fundo */
+/* Container principal do vídeo hero */
 .hero-video {
   position: absolute;
-  /* Posicionamento absoluto */
   top: 0;
-  /* Alinha no topo */
   left: 0;
-  /* Alinha à esquerda */
   width: 100%;
-  /* Largura total */
   height: 100%;
-  /* Altura total */
   z-index: 1;
-  /* Fica atrás do conteúdo */
+  overflow: hidden;
 }
 
 /* Container responsivo para o vídeo */
 .video-container {
   position: relative;
-  /* Contexto para o iframe */
-  padding-bottom: 56.25%;
-  /* Proporção 16:9 (para vídeos) */
+  padding-bottom: 56.25%; /* Proporção 16:9 */
   height: 0;
-  /* Altura controlada pelo padding */
-  overflow: hidden;
-  /* Esconde transbordamento */
   width: 100%;
-  /* Largura total */
 }
 
-/* Estilo do iframe do vídeo */
-.video-container iframe {
+/* Estilo do elemento de vídeo */
+.video-container video {
   position: absolute;
-  /* Posicionamento absoluto */
   top: 0;
-  /* Alinha no topo */
   left: 0;
-  /* Alinha à esquerda */
   width: 100%;
-  /* Largura total */
   height: 100%;
-  /* Altura total */
   object-fit: cover;
-  /* Cobre todo o espaço mantendo proporção */
 }
 
 /* Overlay escuro sobre o vídeo */
 .overlay {
   position: absolute;
-  /* Posicionamento absoluto */
   top: 0;
-  /* Alinha no topo */
   left: 0;
-  /* Alinha à esquerda */
   width: 100%;
-  /* Largura total */
   height: 100%;
-  /* Altura total */
-  /* Gradiente escuro para melhorar legibilidade do texto */
-  background: linear-gradient(to top, rgba(15, 15, 15, 0.9) 0%, rgba(15, 15, 15, 0.3) 100%);
+  background: linear-gradient(
+    to top, 
+    rgba(15, 15, 15, 0.9) 0%, 
+    rgba(15, 15, 15, 0.3) 100%
+  );
 }
 
 /* ========== ESTILOS DAS SEÇÕES ========== */
