@@ -56,5 +56,11 @@ PanteraBot/
 1. Faça download do projeto
 2. Abra o arquivo `index.html` no seu navegador
 
-### Método 2:  🌐 Demo Online
-https://K112p1Esc.github.io/PanteraBot
+### Método 2: 🌐 Demo Online
+
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-GitHub_Pages-blue?style=for-the-badge&logo=github&logoColor=white)](https://K112p1Esc.github.io/PanteraBot)
+
+📸 **Preview do Projeto:**
+![Screenshot do PanteraBot](https://i.imgur.com/HR6aR4c.png)
+
+🔗 **Link direto:** [https://K112p1Esc.github.io/PanteraBot](https://K112p1Esc.github.io/PanteraBot)
