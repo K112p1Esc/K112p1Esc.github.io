@@ -63,5 +63,6 @@ PanteraBot/
 ![Screenshot do PanteraBot](https://github.com/user-attachments/assets/e8184fc9-8927-4e05-8ebd-eec481b23e30)
 
 ## 📝 Licença
-MIT License - Veja o arquivo LICENSE
+MIT License - Veja o arquivo `LICENSE`
+## ­
 <p align="center"> Feito por K112p1<br> #VAMOFURIA 🐆 </p> 
