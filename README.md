@@ -1,6 +1,6 @@
 # 🐆 PanteraBot - O Chatbot Oficial da FURIA Esports
 
-![Banner FURIA](https://github.com/user-attachments/assets/ac94e197-120e-4c1f-8f43-594566286805)
+![Banner FURIA](https://static-cdn.jtvnw.net/jtv_user_pictures/77929c41-b8da-4ddf-8f1f-35a8f6d73a59-profile_banner-480.jpeg)
 
 ## 🔥 Sobre o Projeto
 O PanteraBot é o assistente virtual definitivo para fãs da FURIA Esports. Desenvolvido com tecnologia web moderna, oferece informações em tempo real sobre o time de CS2, jogadores, calendário de partidas e muito mais.
