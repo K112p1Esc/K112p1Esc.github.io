@@ -60,5 +60,10 @@ PanteraBot/
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-GitHub_Pages-blue?style=for-the-badge&logo=github&logoColor=white)](https://K112p1Esc.github.io/)
 
+## 📝 Licença
+MIT License - Veja o arquivo LICENSE
+
+
+<p align="center"> Feito com ❤️ por [Seu Nome]<br> #VAMOFURIA 🐆 </p> ```
 📸 **Preview do Projeto:**
 ![Screenshot do PanteraBot](https://github.com/user-attachments/assets/e8184fc9-8927-4e05-8ebd-eec481b23e30)
