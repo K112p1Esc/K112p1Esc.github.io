@@ -62,6 +62,3 @@ PanteraBot/
 
 📸 **Preview do Projeto:**
 ![Screenshot do PanteraBot](https://github.com/user-attachments/assets/e8184fc9-8927-4e05-8ebd-eec481b23e30)
-
-
-🔗 **Link direto:** [https://K112p1Esc.github.io/PanteraBot](https://K112p1Esc.github.io/PanteraBot)
