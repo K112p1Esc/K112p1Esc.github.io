@@ -1226,8 +1226,8 @@ section {
 
   /* Ajusta posição do botão do chatbot */
   .chatbot-toggle {
-    bottom: 20px;
-    right: 20px;
+    bottom: 15%;
+    right: 1%;
   }
 }
 
