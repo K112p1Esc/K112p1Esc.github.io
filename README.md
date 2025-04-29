@@ -40,8 +40,7 @@ PanteraBot/
 │   ├── style.css       # Estilos principais
 │   └── responsive.css  # Media queries
 ├── js/
-│   ├── script.js       # Lógica principal
-│   └── animations.js   # Efeitos especiais
+│   ├── script.js       # Lógica principal e animações
 ├── img/                # Imagens e logos
 ├── LICENSE             # Licença MIT
 └── README.md           # Você está aqui!
