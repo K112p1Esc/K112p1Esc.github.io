@@ -37,9 +37,9 @@ O PanteraBot é o assistente virtual definitivo para fãs da FURIA Esports. Dese
 PanteraBot/
 ├── index.html          # Página principal
 ├── css/
-│   ├── style.css       # Estilos principais
+│   └── style.css       # Estilos principais
 ├── js/
-│   ├── script.js       # Lógica principal e animações
+│   └── script.js       # Lógica principal e animações
 ├── img/                # Imagens e logos
 ├── LICENSE             # Licença MIT
 └── README.md           # Você está aqui!
