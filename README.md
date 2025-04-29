@@ -38,7 +38,6 @@ PanteraBot/
 ├── index.html          # Página principal
 ├── css/
 │   ├── style.css       # Estilos principais
-│   └── responsive.css  # Media queries
 ├── js/
 │   ├── script.js       # Lógica principal e animações
 ├── img/                # Imagens e logos
