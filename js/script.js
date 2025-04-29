@@ -335,6 +335,23 @@ document.addEventListener('DOMContentLoaded', function () {
       return "A FURIA realiza treinos diários e periódicos bootcamps para preparação em torneios. O time tem uma estrutura completa com:<br><br>- Analistas de jogos<br>- Psicólogos esportivos<br>- Preparadores físicos<br>- Nutricionistas<br><br>Tudo para manter o alto desempenho nos campeonatos!";
     }
 
+        // Outras modalidades
+    if (lowerMessage.includes('outro jogo') || lowerMessage.includes('outros jogos') || lowerMessage.includes('modalidade') || lowerMessage.includes('modalidades') || lowerMessage.includes('valorant') || lowerMessage.includes('lol') || lowerMessage.includes('league of legends') || lowerMessage.includes('rocket league') || lowerMessage.includes('fight') || lowerMessage.includes('fighting games')) {
+      return `A FURIA também está presente em outras modalidades do esports! Confira abaixo:<br><br>
+
+      🎯 <strong>VALORANT</strong><br>
+      A FURIA conta com uma equipe competitiva de VALORANT desde 2021, sendo uma das representantes brasileiras no cenário internacional.<br><br>
+
+      🧙‍♂️ <strong>League of Legends</strong><br>
+      A organização entrou no CBLOL em 2020 e rapidamente se destacou com boas campanhas no campeonato brasileiro.<br><br>
+
+      🚗 <strong>Rocket League</strong><br>
+      Equipe de alto nível competindo em torneios da América do Sul e além.<br><br>
+
+      🥊 <strong>Fighting Games</strong><br>
+      A FURIA também apoia atletas nos jogos de luta como Street Fighter e outros títulos da FGC (Fighting Game Community).<br><br>`;
+    }
+
     // Despedida
     if (lowerMessage.includes('tchau') || lowerMessage.includes('adeus') || lowerMessage.includes('até mais') || lowerMessage.includes('ate mais') || lowerMessage.includes('flw') || lowerMessage.includes('vlw')) {
       return "Até mais! Se precisar de algo, é só chamar. #VAMOFURIA 🐺";
